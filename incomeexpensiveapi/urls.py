@@ -26,7 +26,7 @@ schema_view = get_schema_view(
    openapi.Info(
       title="INCOME EXPENSIVE API",
       default_version='v1',
-      description="Test description",
+      description="Thuy-Duong(Dora)T.NGUYEN",
       terms_of_service="https://www.ourapp.com/policies/terms/",
       contact=openapi.Contact(email="contact@snippets.local"),
       license=openapi.License(name="Test License"),
@@ -39,8 +39,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('authentication/', include('authentication.urls')),
     path('expenses/', include('expenses.urls')),
+    path('income/', include('income.urls')),
     path('', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
 ]
-
-
